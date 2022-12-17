@@ -1,0 +1,44 @@
+body {
+    opacity: 1;
+    background-image: url("hatter.jpg");
+    background-size: 2000px 2000px;}
+    
+    .cim {
+        float: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
+       text-align: center}
+
+    .szoveg1 {
+        float: none;
+         margin-left: 200px;
+		 margin-right: 200px;}
+	.szoveg2 {
+		float: none;
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+	.szoveg3{
+		float: none;
+	text-align: center}
+	  
+	.topnav {
+		background-color: #333;
+		overflow: hidden;}
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			}
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+			}
+		.topnav a.active {
+			background-color: #728CFE;
+			color: white;
+			}

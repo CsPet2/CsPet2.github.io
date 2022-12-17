@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Paralelogramma</title>
+<meta http-equiv="Content-Language" content="hu" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+</style>
+    <link rel="stylesheet" href="style/sty.css">
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html" class="active">Kezdőlap</a>
+  <a href="eat.html">Etess meg egy oposszumot!</a>
+  <a href="count.html">Kifutóépítés</a>
+  <a href="buy.html">Oposszumot vásárolnék</a>
+</div>
+
+
+<div class="cim"><h1>Kifutót építenél? Segítünk kiszámolni, mekkorára van szükséged!</h1></div>
+<div class="szoveg1">Kíváncsi vagy rá, hány oposszum férne el a paralelogramma alakú kifutódban
+(feltéve, ha egységenként 1 oposszumot helyezünk el)? <br><br>
+Add meg itt, mekkora oldalakra és szögre (radiánban) gondoltál: <br><br> 
+
+<form>
+<label for="a">Egyik oldal:</label>
+<input id="a" name="a" type="number" />
+<br />
+<label for="b">Másik oldal:</label>
+<input id="b" name="b" type="number" />
+<br />
+<label for="gamma">Közrezárt szög:</label>
+<input id="gamma" name="gamma" type="number" />
+<br />
+<input type="button" value="Ez hány oposszumnak elég?"
+onclick='document.getElementById("out1").innerHTML = "A kifutó " + ter2() + " oposszumnak elég." '/>
+<script src="script/opossumScript5.js"></script>
+</form>
+<br><br>
+<div id="out1"></div>
+
+
+<br><br>
+
+vagy itt, mekkora alapra és magasságra! <br>
+
+<form>
+<label for="alap">Alap:</label>
+<input id="alap" name="alap" type="number" />
+<br />
+<label for="magas">Magasság:</label>
+<input id="magas" name="magas" type="number" />
+<br />
+<input type="button" value="Ez hány oposszumnak elég?"
+onclick='document.getElementById("out2").innerHTML = "A kifutó " + ter() + " oposszumnak elég." '/>
+<script src="script/opossumScript4.js"></script>
+</form>
+
+<br><br>
+<div id="out2"></div>
+
+</div>
+
+</body>
+</html>

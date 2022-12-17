@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Vásárlás</title>
+<meta http-equiv="Content-Language" content="hu" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+</style>
+    <link rel="stylesheet" href="style/sty.css">
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html" class="active">Kezdőlap</a>
+  <a href="eat.html">Etess meg egy oposszumot!</a>
+  <a href="count.html">Kifutóépítés</a>
+  <a href="buy.html">Oposszumot vásárolnék</a>
+</div>
+
+
+<div class="cim"><h1>Vennél egy oposszumot? Mi is!</h1></div>
+
+<div class="szoveg2"> 
+Nevezd el a képen látható oposszumokat, és add meg, mennyit fizetnél értük!<br><br>
+<table style="width:900px" >
+    <tr>
+    <td> <img src="img/buyme.jpg" width="400" style="margin-right: 10px;"> </td>
+    <td> <div class ="szoveg3"><form>
+	<label for="op1">Első oposszum:</label>
+	<input id="op1" name="op1" type="text" /> <input id="opsz1" name="opsz1" type="number" />
+	<br />
+	<label for="op2">Második oposszum:</label>
+	<input id="op2" name="op2" type="text" /> <input id="opsz2" name="opsz2" type="number" />
+	<br />
+	<label for="op3">Harmadik oposszum:</label>
+	<input id="op3" name="op3" type="text" /> <input id="opsz3" name="opsz3" type="number" />
+	<br />
+	<label for="op4">Negyedik oposszum:</label>
+	<input id="op4" name="op4" type="text" /> <input id="opsz4" name="opsz4" type="number" />
+	<br />
+	<label for="op5">Ötödik oposszum:</label>
+	<input id="op5" name="op5" type="text" /> <input id="opsz5" name="opsz5" type="number" />
+	<br />
+	<label for="op6">Hatodik oposszum:</label>
+	<input id="op6" name="op6" type="text" /> <input id="opsz6" name="opsz6" type="number" /> <br>
+	<br />
+	<input type="button" value="Addide"
+		onclick='document.getElementById("kis").innerHTML = "Ezzel az oposszummal járnál a legjobban: " + legkis()'/>
+	<br><br>
+	<input type="button" value="Átlag? Szórás?"
+		onclick='document.getElementById("atl").innerHTML = "Nem tudom, miért érdekel, de a beírt árak átlaga és szórása:" + stat()'/>
+	<script src="script/store.js"></script>
+	</form>
+	</div>
+	<br><br>
+    </td>  
+    </tr>
+    </table> 
+    </div>
+	<br>
+<div class="szoveg3" id="kis"></div>
+<div class="szoveg3" id="atl"></div>
+
+
+</body>
+</html>

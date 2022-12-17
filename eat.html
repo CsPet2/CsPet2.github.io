@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Oposszumetetés</title>
+<meta http-equiv="Content-Language" content="hu" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+
+    </style>
+    <link rel="stylesheet" href="style/sty.css">
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html" class="active">Kezdőlap</a>
+  <a href="eat.html">Etess meg egy oposszumot!</a>
+  <a href="count.html">Kifutóépítés</a>
+  <a href="buy.html">Oposszumot vásárolnék</a>
+</div>
+
+
+<div class="cim"><h1>Etess meg egy oposszumot!</h1></div>
+
+<div class="szoveg2"> 
+Mondd el, mi van a hűtődben, az oposszum eldönti, mit szeretne megenni belőle <br><br>
+        <table style="width:700px" >
+            <tr>
+            <td> <img src="img/kaja_sok.jpg" width="530" style="margin-right: 10px;"> </td>
+            <td> <div class ="szoveg3"><form>
+			<label for="kaja1">Van nálam:</label>
+			<input id="kaja1" name="kaja1" type="text" />
+			<br />
+			<label for="kaja2">és még:<t><t></label>
+			<input id="kaja2" name="kaja2" type="text" />
+			<br />
+			<label for="kaja3">aztán:</label>
+			<input id="kaja3" name="kaja3" type="text" />
+			<br />
+			<label for="kaja4">valamint:</label>
+			<input id="kaja4" name="kaja4" type="text" />
+			<br />
+			<label for="kaja5">ráadásul:</label>
+			<input id="kaja5" name="kaja5" type="text" />
+			<br />
+			<label for="kaja6">végül:</label>
+			<input id="kaja6" name="kaja6" type="text" /><br/>
+			<br />
+			<input type="button" value="Küldd az oposszumot!"
+			onclick='document.getElementById("out1").innerHTML = "Az oposszum kedvencei a kínálatból: " + OPstr()  '/>
+			<script src="script/kaja.js"></script>
+</form>
+</div>
+<br><br>
+
+            </td>
+              
+            </tr>
+          </table> 
+    </div>
+	<br>
+<div class="szoveg3" id="out1"></div>
+
+
+
+
+
+</body>
+</html>
